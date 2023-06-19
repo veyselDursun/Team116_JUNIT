@@ -1,4 +1,4 @@
-package tests.day05_maven_JunitFramework;
+package day05_maven_Junitframework;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Test;
