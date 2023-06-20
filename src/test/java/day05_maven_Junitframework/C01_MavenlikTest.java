@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class C01_MavenlikTest {
+
     public static void main(String[] args) throws InterruptedException {
 /*
             Selenium 4.7.0 ile Selenium kendi WebDriver'ini olusturma

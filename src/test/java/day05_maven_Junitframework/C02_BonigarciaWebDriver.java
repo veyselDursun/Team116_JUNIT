@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class C02_BonigarciaWebDriver {
+
     public static void main(String[] args) throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
@@ -21,10 +22,3 @@ public class C02_BonigarciaWebDriver {
 
     }
 }
-
-    git init
-    git add .
-        git commit -m "first commit"
-        git branch -M main
-        git remote add origin https://github.com/veyselDursun/team116_JUNIT.git
-        git push -u origin main
