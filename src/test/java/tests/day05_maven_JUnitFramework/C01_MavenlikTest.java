@@ -1,4 +1,4 @@
-package day05_maven_Junitframework;
+package tests.day05_maven_JUnitFramework;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

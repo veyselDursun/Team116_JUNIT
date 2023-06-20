@@ -1,4 +1,4 @@
-package day05_maven_Junitframework;
+package tests.day05_maven_JUnitFramework;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
