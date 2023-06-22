@@ -16,6 +16,7 @@ public class C05_BasicAuthentication extends TestBase {
         //   Username    : admin
         //  password     : admin
         driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
+
         //4- Basarili sekilde sayfaya girildigini dogrulayin
 
         WebElement basariliGirisYazisi = driver.findElement(By.tagName("p"));

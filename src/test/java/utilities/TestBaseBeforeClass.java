@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class TestBaseBeforeClass {
+
     protected static WebDriver driver;
 
     @BeforeClass
@@ -23,8 +24,12 @@ public class TestBaseBeforeClass {
     @AfterClass
 
     public static void teardown(){
+
         driver.close();
     }
+
+
+
     public void bekle(int saniye){
         try {
             Thread.sleep(saniye*1000);
