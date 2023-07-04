@@ -29,7 +29,7 @@ public class C01_ExplicitlyWait {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         //  3. https://the-internet.herokuapp.com/dynamic_controls adresine gidin.
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
@@ -38,8 +38,8 @@ public class C01_ExplicitlyWait {
         driver.findElement(By.xpath("//*[text()='Remove']")).click();
 
         //  5. “It’s gone!” mesajinin goruntulendigini dogrulayin.
-        WebElement itsGoneElementi= driver.findElement(By.xpath("//p[@id='message']"));
-        Assert.assertTrue(itsGoneElementi.isDisplayed());
+       WebElement itsGoneElement = driver.findElement(By.xpath("//p[@id='It's gone!']"));
+       Assert.assertTrue(itsGoneElement.isDisplayed());
 
         //  6. Add buttonuna basin
         driver.findElement(By.xpath("//button[text()='Add']")).click();
@@ -47,7 +47,7 @@ public class C01_ExplicitlyWait {
 
         //  7. It’s back mesajinin gorundugunu test edin
 
-        WebElement itsBackElementi = driver.findElement(By.xpath("//p[@id='message']"));
+        WebElement itsBackElementi = driver.findElement(By.xpath("//p@id='message']"));
         Assert.assertTrue(itsBackElementi.isDisplayed());
 
         driver.close();
@@ -61,7 +61,7 @@ public class C01_ExplicitlyWait {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 
         //  3. https://the-internet.herokuapp.com/dynamic_controls adresine gidin.
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
@@ -72,6 +72,7 @@ public class C01_ExplicitlyWait {
         //  5. “It’s gone!” mesajinin goruntulendigini dogrulayin.
 
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(40));
+
         /*
             visibilityOf() method'u bize 2 secenek sunuyor
             - Eger webelement'i locate edebiliyorsak, once locate edip
