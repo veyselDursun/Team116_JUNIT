@@ -13,13 +13,14 @@ public class C02_Cookies extends TestBase {
         driver.get("https://www.amazon.com");
 
         //2- tum cookie’leri listeleyin
-        Set<Cookie> cookiesSeti = driver.manage().getCookies();
-        int siraNo=1;
-        for (Cookie eachCookie: cookiesSeti
-        ) {
-            System.out.println(siraNo+" - "+eachCookie);
-            siraNo++;
-        }
+       Set<Cookie> cookiesSeti = driver.manage().getCookies();
+       int siraNo=1;
+       for (Cookie eachCookie: cookiesSeti
+       ) {
+          System.out.println(siraNo+" - "+eachCookie);
+           siraNo++;
+       }
+
 
         //3- Sayfadaki cookies sayisinin 5’den buyuk oldugunu test edin
         Assert.assertTrue(cookiesSeti.size() > 5);
