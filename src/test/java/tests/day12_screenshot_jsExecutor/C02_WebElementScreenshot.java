@@ -16,10 +16,9 @@ public class C02_WebElementScreenshot extends TestBase {
         driver.get("https://www.google.com");
 
         // cikiyorsa cookies reddedin
-
         driver.findElement(By.xpath("//*[text()='Reject all']")).click();
-        // nutella aratalim
 
+        // nutella aratalim
         WebElement aramaKutusu = driver.findElement(By.xpath("//textarea[@name='q']"));
         aramaKutusu.sendKeys("Nutella");
         aramaKutusu.submit();
