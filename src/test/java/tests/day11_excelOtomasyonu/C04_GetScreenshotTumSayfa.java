@@ -45,7 +45,5 @@ public class C04_GetScreenshotTumSayfa extends TestBase {
 
         Assert.assertTrue(actualSonucYazisi.contains(expectedIcerik));
 
-
-
     }
 }
